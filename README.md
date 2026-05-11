@@ -86,10 +86,16 @@ print(df.info())
 print(df.groupby("Species").describe())
 
 
+
+
 satosa = df[df["Species"] == "Iris-setosa"].describe()
+
 versicolor = df[df["Species"] == "Iris-versicolor"].describe()
+
 virginica = df[df["Species"] == "Iris-virginica"].describe()
 
 print("satosa\n", satosa)
+
 print("versicolor\n", versicolor)
+
 print("virginica\n", virginica)
